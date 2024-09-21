@@ -1,57 +1,20 @@
 # DynPrompt-1a
 
-image
-
-## Description 
-Dynamic prompt single agent assistant 
-as a proof of concept 
-a tool for automate repeating tasks -- minimising time spend non-value adding processes, increase efficiency. 
-as a project after completion of deeplearning.ai AI Python and llama prompt engineering course
-
-## Results 
-
-## Technologies Used 
-created using gen AI - llama 3.1 70B via Groq and Codestral via Ollama 
-
-## Requirements
-
-Python
-Ollama 
-
-## How to 
-
-Prep the input csv
-Set your prompt 
-- deeplearning.ai prompt engineering for llama 2 & 3
-- Microsoft / Meta prompt engineering docs 
-- SCRIBE method 
-save output csv 
-
-## v2 - Challenges and future improvements 
-
-low-code multi-agent using langflow 
-n8n automation 
-
-## Resources 
-
-## Contact me 
-
-=====
-
-
-# DynPrompt-1a
-
-This project showcases my learning from the Python with Gen AI course. I've implemented a simple chatbot that uses natural language processing techniques to respond to user input.
-
-## About the Project
-
-The goal of this project is to demonstrate my understanding of machine learning and AI concepts in Python. I've used the course materials as a starting point and added my own features and ideas.
+Dynamic Prompt Assistant - Single Agent  
 
 ## Key Features
 
-* Implemented a simple chatbot using NLTK and scikit-learn libraries
-* Used a pre-trained language model to generate responses
-* Implemented a web interface using Flask
+``Automate repeatitive tasks using gen AI.``
+
+``$0 subscription fee. 100% data privacy.``
+
+## About the Project
+
+This project demonstrate my understanding of prompt engineering of gen AI and coding in Python using gen AI. 
+
+It is a tool for automating repeatitive tasks -- minimising time spend non-value adding processes, increasing work efficiency. 
+
+This is a project after my completion of the ``AI Python course`` and the ``Prompt Engineering with Llama course`` from ``deeplearning.ai``. 
 
 ## Technical Details
 
@@ -59,32 +22,72 @@ The goal of this project is to demonstrate my understanding of machine learning 
 * Libraries used: ollama-python
 * Dependencies required: pandas 
 
-## Usage and Installation
+## Installation and Usage
 
+```
 pip install ollama 
 ollama pull llama3.1:latest 
+```
 
-pip install pandas
+```
+pip install pandas 
+```
 
-## Examples and Screenshots
+### Prep data.csv
 
-Check out the chatbot in action:
+``prompt_var`` is the content of your task. 
 
-[Insert screenshot or video]
+Paste each of them in the ``prompt_var`` column in separate rows. 
+
+### Set your prompt 
+
+Edit your prompt under ``Base prompt`` section in ``app.py``. Use prompt engineering techniques for desired results. 
+
+Resources of prompt engineering: 
+
+- deeplearning.ai Prompt Engineering for llama course 
+- Microsoft / Meta prompt engineering docs 
+- SCRIBE method 
+
+### Run app.py
+
+```
+cd DynPrompt-1a
+python app.py
+```
+
+### Results in responses.csv 
+
+``responses.csv`` is saved in the same folder. Open in Excel. 
 
 ## Challenges and Limitations
 
-* One challenge I faced was optimizing the chatbot's responses to be more accurate.
-* I overcame this by using a combination of machine learning techniques and natural language processing algorithms.
+The responses is largely depends on the LLM in use, and prompt engineering techniques. 
+
+Prompt engineering techniques can be refined with resources mentioned above. 
+
+The LLM model could be used depends on your hardware. The better the model, the higher RAM and VRAM requirements. 
+
+In this script in particular, I am using ``Llama 3.1 8B`` on MacBook M3 Pro ``18GB RAM``. You may run into errors if your VRAM is insufficient. 
+
+Check in terminal to see if Ollama is running correctly. Or edit the script for a smaller LLM accordingly. 
+
+```
+ollama run llama3.1:latest
+```
 
 ## Future Plans and Ideas
 
-I'd like to explore using other machine learning models to improve the chatbot's performance. I'm also interested in integrating the chatbot with other services, such as voice assistants.
+I am interested in:
+
+* Langflow -- a low-code tool for multi-agent workflow allows more complex tasks 
+
+* n8n -- an automation workflow tool which works across differnt apps 
 
 ## Feedback and Contributions
 
-If you have any feedback or suggestions for improvement, please let me know! I'm open to contributions and collaborations.
+If you have any feedback or suggestions for improvement, please let me know! 
 
 ## License and Attribution
 
-This project is licensed under the MIT License. I'd like to thank the instructors of the Python with Gen AI course for their guidance and support.
+This project is licensed under the MIT License. I would like to thank the instructors from deeplearning.ai. 

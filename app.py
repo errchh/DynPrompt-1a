@@ -29,30 +29,31 @@ except pd.errors.ParserError:
     print("Error parsing the file. Please check the file format.")
 
 # Column prompt_var to a list
-var = df["prompt_var"].tolist()
+prompt_var_list = df["prompt_var"].tolist()
 
-##### ==================================================================== #####
-#                                                                              #
-#     Edit your prompt below                                                   #
-#     Each item in data.csv will sit in a new line right under your prompt     #
-#                                                                              #
-#### ===================================================================== #####
+##### ================================================================== #####
+#                                                                            #
+#     Edit your base prompt below                                            #
+#     Each item in data.csv will sit in a new line under the base prompt     #
+#                                                                            #
+#### =================================================================== #####
 
 # Base prompt
 prompt = """
-    create a brand name using the following keyword. Provide the word only. 
+    You are a helpful assistant expert in branding. Create a brand name using the following keyword. It must be easy to pronounce and easy to remember. 
+    Provide the brand name only. 
     Keyword:\n
 """
 
 responses = []  # Create an empty list to store the responses
 
 # Loop variable through LLM 
-for item in var:
+for item in prompt_var_list:
     response = ollama.chat(model='llama3.1', messages=[
         {
             'role': 'user',
             'content': f"""
-                {prompt}\n
+                {prompt}
                 {item}
             """,
         },
@@ -60,9 +61,8 @@ for item in var:
     responses.append(response['message']['content'])  # Append the response to the list
     #print(response['message']['content'])
 
-# print(responses)  # Print the list of responses
 
 # Save responses list as csv 
-responses = pd.DataFrame(responses, columns=['Responses'])  # Convert list to DataFrame
+responses = pd.DataFrame(responses, columns=['responses'])  # Convert list to DataFrame
 responses.to_csv('responses.csv', index=False)
 
