@@ -10,17 +10,17 @@ Dynamic Prompt Assistant - Single Agent
 
 ## About the Project
 
-This project demonstrate my understanding of prompt engineering of gen AI and coding in Python using gen AI. 
+This project demonstrates my understanding of prompt engineering and coding in Python using gen AI. 
 
-It is a tool for automating repeatitive tasks -- minimising time spend non-value adding processes, increasing work efficiency. 
+It is a tool for automating repeatitive tasks -- minimising time spend on non-value adding processes, increasing work efficiency. 
 
 This is a project after my completion of the ``AI Python course`` and the ``Prompt Engineering with Llama course`` from ``deeplearning.ai``. 
 
 ## Technical Details
 
-* Python version: 3.11
-* Libraries used: ollama-python
-* Dependencies required: pandas 
+- Python version: 3.11
+- Libraries used: ollama-python
+- Dependencies required: pandas 
 
 ## Installation and Usage
 
@@ -54,7 +54,7 @@ Example use cases:
 
 Resources of prompt engineering: 
 
-- deeplearning.ai Prompt Engineering for llama course 
+- deeplearning.ai Prompt Engineering for Llama course 
 - Microsoft / Meta prompt engineering docs 
 - SCRIBE method 
 
@@ -71,11 +71,11 @@ python app.py
 
 ## Challenges and Limitations
 
-The responses is largely depends on the LLM in use, and prompt engineering techniques. 
+The responses are largely depend on the LLM in use, and prompt engineering techniques. 
 
 Prompt engineering techniques can be refined with resources mentioned above. 
 
-The LLM model could be used depends on your hardware. The better the model, the higher RAM and VRAM requirements. 
+What LLM model could be used depends on your hardware. The better the LLM model, the higher RAM and VRAM requirements. 
 
 In this script in particular, I am using ``Llama 3.1 8B`` on MacBook M3 Pro ``18GB RAM``. You may run into errors if your VRAM is insufficient. 
 
@@ -95,8 +95,8 @@ I am interested in:
 
 ## Feedback and Contributions
 
-If you have any feedback or suggestions for improvement, please let me know! 
+If you have any feedback or suggestions for improvement, or if you know any good tutorials on Langflow and n8n, please let me know! Let's connect. 
 
 ## License and Attribution
 
-This project is licensed under the MIT License. I would like to thank the instructors from deeplearning.ai. 
+This project is licensed under the MIT License. I would like to thank the open source community and the instructors from deeplearning.ai. 
