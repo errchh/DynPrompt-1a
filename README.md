@@ -86,7 +86,7 @@ I am interested in:
 
 * Langflow -- a low-code tool for multi-agent workflow allows more complex tasks 
 
-* n8n -- an automation workflow tool which works across differnt apps 
+* n8n -- an automation workflow tool which works across different apps 
 
 ## Feedback and Contributions
 
