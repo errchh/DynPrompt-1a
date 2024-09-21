@@ -47,6 +47,11 @@ Paste each of them in the ``prompt_var`` column in separate rows.
 
 Edit your prompt under ``Base prompt`` section in ``app.py``. Use prompt engineering techniques for desired results. 
 
+Example use cases: 
+
+- Text extractor for email
+- Customer review text classifier 
+
 Resources of prompt engineering: 
 
 - deeplearning.ai Prompt Engineering for llama course 
@@ -84,9 +89,9 @@ ollama run llama3.1:latest
 
 I am interested in:
 
-* Langflow -- a low-code tool for multi-agent workflow allows more complex tasks 
+- Langflow -- a low-code tool for multi-agent workflow allows more complex tasks 
 
-* n8n -- an automation workflow tool which works across different apps 
+- n8n -- an automation workflow tool which works across different apps 
 
 ## Feedback and Contributions
 
