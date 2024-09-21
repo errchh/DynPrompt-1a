@@ -24,6 +24,10 @@ This is a project after my completion of the ``AI Python course`` and the ``Prom
 
 ## Installation and Usage
 
+Download and install Ollama from ``https://ollama.com/download`` 
+
+In Terminal: 
+
 ```
 pip install ollama 
 ollama pull llama3.1:latest 
