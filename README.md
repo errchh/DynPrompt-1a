@@ -12,7 +12,7 @@ Dynamic Prompt Assistant - Single Agent
 
 This project demonstrates my understanding of prompt engineering and coding in Python using gen AI. 
 
-It is a tool for automating repeatitive tasks -- minimising time spend on non-value adding processes, increasing work efficiency. 
+It is a tool for automating repetitive tasks -- minimising time spend on non-value adding processes, increasing work efficiency. 
 
 This is a project after my completion of the ``AI Python course`` and the ``Prompt Engineering with Llama course`` from ``deeplearning.ai``. 
 
