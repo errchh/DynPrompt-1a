@@ -4,7 +4,7 @@ Dynamic Prompt Assistant - Single Agent
 
 ## Key Features
 
-``Automate repeatitive tasks using gen AI.``
+``Automate repetitive tasks using gen AI.``
 
 ``$0 subscription fee. 100% data privacy.``
 
