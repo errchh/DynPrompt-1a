@@ -50,7 +50,30 @@ Edit your prompt under ``Base prompt`` section in ``app.py``. Use prompt enginee
 Example use cases: 
 
 - Text extractor for email
+    ```
+    prompt = f"""
+        Given is an email from contains product code and corresponding remarks. Identify the product code and remarks within the original text. 
+        
+        Provide the product code and remark only in csv format, ready to save. Exclude the "```csv" declaration, don't add spaces after the comma, include column headers.
+
+        Format:
+        product_code, remark
+        product_code_1, remark_1
+        ...
+        
+        Email:
+        """
+    ```
+
 - Customer review text classifier 
+    ```
+    prompt = f"""
+        Respond with "Positve" or "Negative": 
+        the comment is a positive product reivew, describing a good user experience. 
+
+        Comment:
+        """
+    ```
 
 Resources of prompt engineering: 
 
