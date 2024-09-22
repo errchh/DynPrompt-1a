@@ -69,7 +69,7 @@ Example use cases:
     ```
     prompt = f"""
         Respond with "Positve" or "Negative": 
-        the comment is a positive product reivew, describing a good user experience. 
+        the comment is a product reivew, describing an user experience. 
 
         Comment:
         """
