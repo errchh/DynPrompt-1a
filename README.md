@@ -120,6 +120,6 @@ I am interested in:
 
 If you have any feedback or suggestions for improvement, or if you know any good tutorials on Langflow and n8n, please let me know! Let's connect. 
 
-## License and Attribution
+## Attribution
 
-This project is licensed under the MIT License. I would like to thank the open source community and the instructors from deeplearning.ai. 
+I would like to thank the open source community and the instructors from deeplearning.ai. 
